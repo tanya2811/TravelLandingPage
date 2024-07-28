@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(48, 127, 192, 0.644);
+    background-image: linear-gradient(rgba(41, 38, 38, 0.774),rgba(26, 20, 20, 0.555));
+ 
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 38, 38, 0.555), rgba(20, 20, 20, 0.788)),url('back2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    cursor: pointer;
+}
+.logo img{
+    /* width: 80px; */
+    margin-top: -20px;
+    height: 80px;
+}
+.list ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.list ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.list ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgba(48, 127, 192, 0.932);
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+    position: absolute;
+    transition: 0.5s;
+
+}
+.list ul li:hover::after{
+    width: 100%;
+}
+.cont{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: rotateY(50%);
+    text-align: center;
+    
+}
+.cont h1{
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+.cont p{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(223, 194, 194);
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid rgb(18, 109, 230);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+.s{ 
+    background: rgba(48, 127, 192, 0.932);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1.5s;
+
+}
+button:hover  .s{
+width: 100%;
+}
+.grid{
+    display: flex;
+    margin-top: 20px;
+}
+.h{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pg{
+    margin-left: 150px;
+    
+    width: 650px;
+    font-size: medium;
+}
+.im{
+    margin-left: 50px;
+    width: 650px;
+}
+.galy{
+    /* background-color: rgba(27, 71, 167, 0.664); */
+    margin-left: 150px;
+    height: 300px;
+    width: 990px;
+    align-items: center;
+    text-align: center;
+    border-radius: 3%;
+    display: flex;
+}
